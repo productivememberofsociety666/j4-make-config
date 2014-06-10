@@ -199,7 +199,7 @@ if __name__ == "__main__":
 
 	if args.do_restart:
 		system("i3-msg restart")
-  elif args.do_reload:
+	elif args.do_reload:
 		system("i3-msg reload")
 	
 	# store commandstring in rc file
