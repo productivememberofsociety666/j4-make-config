@@ -49,8 +49,6 @@ def getThemeList():
 	"\n"
 	])
 
-#self.__class__.arg_parser = arg_parser
-
 if __name__ == "__main__":
 	arg_parser = argparse.ArgumentParser(
 	description="i3 config generator/switcher",
