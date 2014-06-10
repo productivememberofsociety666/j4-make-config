@@ -52,6 +52,10 @@ To let j4-make-config restart i3 after creating an i3 configuration, run:
 
     j4-make-config -r <theme-name>|none
 
+To let i3 reload its config instead of restarting, run:
+
+    j4-make-config --reload <theme-name>|none
+
 To append additional configuration from files in the i3 config directory, run:
 
     j4-make-config -a <file-name> -a <another-file-name> <theme-name>|none
