@@ -75,6 +75,8 @@ if __name__ == "__main__":
 	arg_parser.add_argument("-r", "--restart", action="store_true",
 	dest="do_restart",
 	help="restart i3 after generating config")
+	arg_parser.add_argument("--reload", action="store_true", dest="do_reload",
+	help="let i3 reload config after generating it")
 	arg_parser.add_argument("-a", "--append", dest="append_files", default=[],
 	action="append",
 	help="append additional configuration from files in the i3 config directory")
@@ -197,6 +199,8 @@ if __name__ == "__main__":
 
 	if args.do_restart:
 		system("i3-msg restart")
+  elif args.do_reload:
+		system("i3-msg reload")
 	
 	# store commandstring in rc file
 	commandString = ' '.join(argv)
